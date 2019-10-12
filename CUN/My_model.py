@@ -67,8 +67,8 @@ class BertForSequenceClassification(nn.Module):
         myw = torch.tensor(weight,dtype = torch.float)
         return myw
     def forward(self, input_ids, token_type_ids, attention_mask, class_labels, detection_lablels,aspects,flag):
-        my_head_mask=torch.tensor([1,1,1,1,1,1,1,1,0,0,0,0],dtype= torch.float)
-        if flag == 1:my_head_mask=torch.tensor([0,0,0,0,1,1,1,1,1,1,1,1],dtype= torch.float)
+        my_head_mask=torch.tensor([1,1,1,1,1,1,1,1,1,1,0,0],dtype= torch.float)
+        if flag == 1:my_head_mask=torch.tensor([0,0,1,1,1,1,1,1,1,1,1,1],dtype= torch.float)
         #my_head_mask.cuda()
         encode, pooled_output = self.bert(input_ids, attention_mask=attention_mask,token_type_ids= token_type_ids,head_mask=my_head_mask.cuda())
         #print(encode.size())
@@ -78,7 +78,7 @@ class BertForSequenceClassification(nn.Module):
         #sentiment_logits = self.classifier_sentiment(pooled_output)
         aspect_embed = self.embedding(aspects)
         aspect_embed = aspect_embed.unsqueeze(1)
-        full_aspect_embed = aspect_embed.expand(-1,512,768)
+        full_aspect_embed = aspect_embed.expand(-1,128,768)
         if flag == 0:
             Md = self.wh_d(encode)+self.wa_d(full_aspect_embed)
             attention_d = self.softmax_d(self.w_d(Md))

@@ -71,20 +71,25 @@ def load_aspect_embedding_weight():
         weight.append(aspect)
     myw = torch.tensor(weight,dtype = torch.float)
     return myw
-weight = load_aspect_embedding_weight()
-model = BertForSequenceClassification( 5)
-no_decay = ['bias', 'gamma', 'beta']
-print(model.named_parameters() )
-for n, p in model.named_parameters() :
-  #  print(n)
-  #pass
-    if any(nd in n for nd in no_decay):
-        print(n)
-optimizer_parameters = [
-     #{'params': [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)], 'weight_decay_rate': 0.01},
-     {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], 'weight_decay_rate': 0.0}
-     ]
-i = 0
-f = open("abc2.txt","w")
-f.write(str(optimizer_parameters))
-        
+#weight = load_aspect_embedding_weight()
+#model = BertForSequenceClassification( 5)
+#no_decay = ['bias', 'gamma', 'beta']
+#print(model.named_parameters() )
+#for n, p in model.named_parameters() :
+#  #  print(n)
+#  #pass
+#    if any(nd in n for nd in no_decay):
+#        print(n)
+#optimizer_parameters = [
+#     #{'params': [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)], 'weight_decay_rate': 0.01},
+#     {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], 'weight_decay_rate': 0.0}
+#     ]
+#i = 0
+#f = open("abc2.txt","w")
+#f.write(str(optimizer_parameters))
+       # import torch
+x = torch.tensor([[0.3,0.7],[0.2,0.8]])
+t = torch.tensor([[0.3,0.7],[0.9,0.1]])
+print(torch.mul(x,x))
+y = torch.sum(torch.mul(x,x)/2 ) #x.mm(x)
+print(y)

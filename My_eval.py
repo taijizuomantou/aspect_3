@@ -55,10 +55,11 @@ def get_y_true(task_name):
             y_true.append(n)
     
     return y_true
-def semeval_PRF(y_true, y_pred):
+def semeval_PRF(y_true, y_pred,score):
     """
     Calculate "Micro P R F" of aspect detection task of SemEval-2014.
     """
+    
     s_all=0
     g_all=0
     s_g_all=0
@@ -67,7 +68,11 @@ def semeval_PRF(y_true, y_pred):
         g=set()
         for j in range(5):
             if y_pred[i*5+j]!=0:
-                s.add(j)
+                maximum = 0
+                for idd,item in enumerate(score[i*5+j]):
+                    if item > maximum : maximum = item
+                if maximum > 0.0:
+                    s.add(j)
             if y_true[i*5+j]!=4:
                 g.add(j)
         if len(g)==0:continue
@@ -79,7 +84,15 @@ def semeval_PRF(y_true, y_pred):
     p=s_g_all/s_all
     r=s_g_all/g_all
     f=2*p*r/(p+r)
-
+#    for i in range(len(y_true)):
+#        if y_true[i] != 4:
+#            y_true[i] = 1
+#        else:
+#            y_true[i] = 0
+#        if y_true[i] != y_pred[i]:
+#           # print(i)
+#            print(y_true[i])
+#            print(score[i])
     return p,r,f
 
 
@@ -142,7 +155,7 @@ def semeval_Acc(y_true, y_pred, score, classes=4):
         sentiment_Acc = total_right/total
 
     return sentiment_Acc
-pred_data_dir = "results/semeval2014/NLI_M/test_ep_6.txt"
+pred_data_dir = "results/liuyong13sentiment_attention_add/NLI_M/test_ep_4.txt"
 detect_pred=[]
 y_pred = []
 score=[]
@@ -158,7 +171,7 @@ with open(pred_data_dir,"r",encoding="utf-8") as f:
         s = f.readline().strip().split()
         i += 1
 y_true = get_y_true("semeval_QA_M")
-aspect_P, aspect_R, aspect_F = semeval_PRF(y_true, detect_pred)
+aspect_P, aspect_R, aspect_F = semeval_PRF(y_true, detect_pred, score)
 sentiment_Acc_4_classes = semeval_Acc(y_true, y_pred, score, 4)
 sentiment_Acc_3_classes = semeval_Acc(y_true, y_pred, score, 3)
 sentiment_Acc_2_classes = semeval_Acc(y_true, y_pred, score, 2)
