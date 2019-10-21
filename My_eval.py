@@ -155,7 +155,7 @@ def semeval_Acc(y_true, y_pred, score, classes=4):
         sentiment_Acc = total_right/total
 
     return sentiment_Acc
-pred_data_dir = "results/liuyong13sentiment_attention_add/NLI_M/test_ep_4.txt"
+pred_data_dir = "results/semeval2014/NLI_M/test_ep_1.txt"
 detect_pred=[]
 y_pred = []
 score=[]
