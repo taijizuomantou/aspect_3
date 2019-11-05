@@ -1,0 +1,68 @@
+0    positive    anecdotes    From the beginning, we were met by friendly staff memebers, and the convienent parking at Chelsea Piers made it easy for us to get to the boat.
+0    positive    ambience    it is a hidden delight complete with a quaint bar and good food.
+0    neutral    ambience    Tiny restaurant with very fast service.
+0    positive    price    My husband and I have been there at least 6 times and we've always been given the highest service and often free desserts.
+0    positive    food    The staff is unbelievably friendly, and I dream about their Saag gosht...so good.
+0    negative    ambience    I can't stand this dungeon.
+0    positive    ambience    Sit back in one of those comfortable chairs.
+0    neutral    service    It's about $7 for lunch and they have take-out or dine-in.
+0    negative    food    Way too much money for such a terrible meal.
+0    positive    food    Service is excellent, no wait, and you get a lot for the price.
+0    negative    service    The food is so good and so popular that waiting can really be a nightmare.
+0    positive    anecdotes    THE SERVICE IS PERFECT TOO  NOTHING WRONG IN THIS ITALIAN/FRENCH RESTAURANT
+0    negative    price    The $72 Delmonico steak had to be sent back because it was not cooked to order.
+0    negative    service    Not to sound too negative but be wary of the delivary.
+0    positive    service    I found the food to be just as good as its owner, Da Silvano, just much less expensive.
+0    positive    ambience    It's no-fuss, fast and delicious.
+0    positive    service    It's no-fuss, fast and delicious.
+0    negative    anecdotes    The service was a bit slow and the portions are a bit small so if you are hungry and in a rush, this is not the place for you.
+0    negative    anecdotes    The ambiance was pretty cool, but not worth the hassle.
+0    positive    anecdotes    El Nidos one of the best restaurants in New York which I've ever been to, has a great variety of tasty, mouth watering pizza's.
+0    negative    anecdotes    The service was pretty poor all around, the food was well below average relative to the cost, and outside there is a crazy bum who harasses every customer who leaves the place.
+0    positive    anecdotes    You must try Odessa stew or Rabbit stew; salads-all good; and kompot is soo refreshing during the hot summer day (they make it the way my mom does, reminds me of home a lot).
+0    negative    anecdotes    Cool atmosphere but such a let down.
+0    negative    price    Finally let into the store 5 at a time, to buy expensive slices from a harried staff.
+0    negative    anecdotes    Finally let into the store 5 at a time, to buy expensive slices from a harried staff.
+0    positive    anecdotes    Everything about this place is adorable - even the bathroom!
+0    conflict    anecdotes    The lack of AC and the fact that there are a million swarming bodies (although everyone is polite and no one is pushing) is a slight turn off.
+0    conflict    anecdotes    Both were very good, but nothing you couldn't get at similar restaurant.
+0    negative    food    I can understand the prices if it served better food, like some Chinese restaurants in midtown/uptown area.
+0    negative    anecdotes    Service was awful - mostly because staff were overwhelmed on a Saturday night.
+0    positive    price    The service was great, and they have a whole great deal for birthdays.
+0    positive    food    Have a mojito and sit in the back patio.
+0    negative    ambience    In Short The Black Sheep distinguishes itself from the Midtown pub herd with a look that's a mix of sports-bar butch and ornate kitsch.
+0    positive    anecdotes    I would definitely go back -- if only for some of those exotic martinis on the blackboard.
+0    positive    anecdotes    then she made a fuss about not being able to add 1 or 2 chairs on either end of the table for additional people.
+0    positive    anecdotes    With all the mundane or mediocre places on 8th avenue it is nice to have one that is a step above in quaility and atmosphere.
+0    positive    anecdotes    Give it a try, menu is typical French but varied.
+0    positive    service    the negative reviews on city search are probably from jealous competing restaurants who realize they can't compete with Temple's entire positive attitude about the proper way to treat their customers and deliver top quality food.
+0    neutral    food    We ordered a glass of wine and were finished eating and paying before the wine came.
+0    positive    ambience    Overall, this is a nice place to take a few friends to hang out at and the service is excellent.
+0    negative    anecdotes    Actually, everyone who worked there seemed to be annoyed.
+0    negative    service    the restaurant was completely empty, but she gave me a dirty look and asked, no reservations?
+0    negative    ambience    I came to fresh expecting a great meal, and all I got was marginally so-so food served in a restaurant that was just so freezing we couldn't enjoy eating.
+0    positive    anecdotes    Best Chinese on the Upper East, prompt delivery, good value.
+0    positive    ambience    It's the conversations that make this a fun place to be.
+0    positive    food    You can eat gourmet food at a fast food price.
+0    negative    ambience    We spent so much time getting elbowed around while we waited we left.
+0    positive    ambience    There restaurant is very casual, but perfect for lunch, and their delivery service is always very fast.
+0    positive    anecdotes    Great restaurant, and even greater food!
+0    positive    anecdotes    We were there March 7 and found Maison very nice.
+0    positive    service    Great food, good wine and an excellent host.
+0    negative    price    It took a bigger bite from my wallet than my appetite - I would not reccomend this to anyone that I would want to talk to me again!!
+0    positive    ambience    Despite the 5th ave address there are no frills whick I also love.
+0    negative    ambience    The service, however, is a peg or two below the quality of food (horrible bartenders), and the clientele, for the most part, are rowdy, loud-mouthed commuters (this could explain the bad attitudes from the staff) getting loaded for an AC/DC concert or a Knicks game.
+0    positive    anecdotes    The restaurant could use a little paint, but all in all a great sushi place!
+0    positive    anecdotes    The decoration was feeling like we was on the Cairo, actually the street is part of that adventure.
+0    conflict    anecdotes    The food is consistant and good but how it got name Best Diner In Manhattan is beyond me.
+0    positive    anecdotes    Had dinner here on a Friday and the food was great.
+0    neutral    anecdotes    I was on jury duty, rode my bike up Centre Street on my lunch break and came across this great little place with awesome chicken tacos and Hibiscus lemonade.
+0    positive    ambience    I was on jury duty, rode my bike up Centre Street on my lunch break and came across this great little place with awesome chicken tacos and Hibiscus lemonade.
+0    positive    anecdotes    good place to hang out during the day after shopping or to grab a simple soup or classic french dish over a glass of wine.
+0    positive    ambience    A plus was the good mix of people in their twenties that provided for great eye-candy while I was there.
+0    conflict    anecdotes    Slow service, but when you're hanging around with groups of 10 or 20, who really notices?
+0    conflict    anecdotes    Two complaints- their appetizer selection stinks, it would be nice to get some mozzarella sticks on the menu.
+0    conflict    anecdotes    The new menu has a few creative items,they were smart enough to keep some of the old favorites (but they raised the prices), the staff is friendly most of the time, but I must agree with the person that wrote about their favorite words: No, can't, sorry..., boy, they won't bend the rules for anyone.
+0    neutral    anecdotes    It' only open for lunch but the food is so good!
+0    negative    anecdotes    I asked repeatedly what the status of the meal was and was pretty much grunted at by the unbelievably rude waiter.
+0    negative    food    I have never in my life sent back food before, but I simply had to, and the waiter argued with me over this.

@@ -38,7 +38,6 @@ class BertForSequenceClassification(nn.Module):
         self.classifier_detection = nn.Linear(768, 2)
         self.classifier_sentiment = nn.Linear(768, 4)
         self.embedding = nn.Embedding(5,768)
-        #self.embedding_2 = nn.Embedding(5,768)
         #self.embedding.weight.data.copy_(self.load_aspect_embedding_weight())
         self.wh_d = nn.Linear(768,768)
         self.wh_c = nn.Linear(768,768)
@@ -70,12 +69,8 @@ class BertForSequenceClassification(nn.Module):
         detection_logits = self.classifier_detection(pooled_output)
         sentiment_logits = self.classifier_sentiment(pooled_output)
         aspect_embed = self.embedding(aspects)
-        aspect_embed = aspect_embed.unsqueeze(1)        
+        aspect_embed = aspect_embed.unsqueeze(1)
         full_aspect_embed = aspect_embed.expand(-1,128,768)
-        
-       # aspect_embed_2 = self.embedding_2(aspects)
-       # aspect_embed_2 = aspect_embed_2.unsqueeze(1)
-       # full_aspect_embed_2 = aspect_embed_2.expand(-1,128,768)
         
         Md = self.wh_d(encode)+self.wa_d(full_aspect_embed)
         attention_d = self.softmax_d(self.w_d(Md))
@@ -109,5 +104,5 @@ class BertForSequenceClassification(nn.Module):
 #            print(attention_d)
 #        attention_loss_c = 1 - torch.sum(torch.mul(attention_c,attention_c))/sizee
         #print( torch.sum(torch.mul(attention_d,attention_d)))
-        loss = loss +attention_loss_d# +attention_loss_c
+        loss = loss +attention_loss_d #+attention_loss_c
         return loss, detection_logits,sentiment_logits

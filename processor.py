@@ -121,7 +121,7 @@ class Sentihood_NLI_M_Processor(DataProcessor):
 
     def get_labels(self):
         """See base class."""
-        return ['None', 'Positive', 'Negative']
+        return ['Positive', 'Negative','None']
 
     def _create_examples(self, lines, set_type):
         """Creates examples for the training and dev sets."""
@@ -132,12 +132,12 @@ class Sentihood_NLI_M_Processor(DataProcessor):
             text_a = tokenization.convert_to_unicode(str(line[1]))
             text_b = tokenization.convert_to_unicode(str(line[2]))
             label = tokenization.convert_to_unicode(str(line[3]))
-            if i%1000==0:
-                print(i)
-                print("guid=",guid)
-                print("text_a=",text_a)
-                print("text_b=",text_b)
-                print("label=",label)
+#            if i%1000==0:
+#                print(i)
+#                print("guid=",guid)
+#                print("text_a=",text_a)
+#                print("text_b=",text_b)
+#                print("label=",label)
             examples.append(
                 InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
         return examples
